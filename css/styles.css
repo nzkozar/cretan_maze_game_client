@@ -1,0 +1,115 @@
+/*
+    Author: Anže Kožar (@nzkozar))
+    Created: 11.7.2018
+*/
+html{
+	width: 100%;
+	padding:0px;
+}
+
+body{
+	width: 90%;
+	background:#000000;
+	padding:16px;
+}
+
+.pageTitle{
+	color: #ffffff;
+	font-size: 20pt;
+	text-align: center;
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.centerContainer{
+	width: 455px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.floatingSection{
+	border: 2px solid #aa0000;
+	border-radius: 5px;
+	padding: 10px;
+	background: #222222;
+	color: #ffffff;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#infoDiv{
+	min-width: 300px;
+	max-width: 25%;
+	text-align: left;
+}
+
+#infoDiv_output_raw{
+	color:#ffffff;
+	margin-top: 10px;
+	font-size: 2pt;
+}
+
+#infoDiv_output_raw:hover{
+	color:#ffffff;
+	font-size: 12pt;
+}
+
+.viewMapTable{
+}
+
+.mazeControllButton{
+	width:100px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	background: #fefefe;
+	text-align: center;
+	box-shadow: 1px 0px black;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 3px;
+	cursor: pointer;
+	color:black;
+}
+
+.mazeControllButton:hover{
+	border: 1px solid grey;
+	background: #f0f0f0;
+}
+
+
+
+/* TILE styles */
+.mazeTile{
+	height: 150px;
+	width: 150px;
+}
+
+td.mazeTile_WALL{
+	background: #019688;
+}
+
+td.mazeTile_EMPTY{
+	background: #ffffff;
+}
+
+td.mazeTile_COIN{
+	background: #fee038;
+}
+
+td.mazeTile_ENTRANCE{
+	background: #a7dcd2;
+	border:3px dashed blue;
+}
+
+td.mazeTile_EXIT{
+	background: #a7dcd2;
+	border:3px dashed green;
+}
+
+td.mazeTile_UNEXPLORED{
+	border:2px dashed yellow;
+}
